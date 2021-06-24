@@ -4,15 +4,15 @@
 
 Each detected activity will have an activity type, which is one of the following:
 
--IN_VEHICLE
--ON_BICYCLE
--ON_FOOT
--RUNNING
--STILL
--TILTING
--UNKNOWN
--WALKING
--INVALID (used for parsing errors)
+- IN_VEHICLE
+- ON_BICYCLE
+- ON_FOOT
+- RUNNING
+- STILL
+- TILTING
+- UNKNOWN
+- WALKING
+- INVALID (used for parsing errors)
 
 As well as a confidence expressed in percentages (i.e. a value from 0-100).
 
