@@ -1,16 +1,32 @@
-# flutter_app_activity
+# Flutter app for Android and iOS for activity recognition, transition, location, distance calculation with bus and train support(beta).
 
-A new Flutter application.
+`activity_recognition_flutter 4.0.3`
 
-## Getting Started
+Each detected activity will have an activity type, which is one of the following:
 
-This project is a starting point for a Flutter application.
+- IN_VEHICLE
+- ON_BICYCLE
+- ON_FOOT
+- RUNNING
+- STILL
+- TILTING
+- UNKNOWN
+- WALKING
+- INVALID (used for parsing errors)
 
-A few resources to get you started if this is your first Flutter project:
+As well as a confidence expressed in percentages (i.e. a value from 0-100).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+`location 4.3.0`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**getLocation()**
+Allow to get a one time position of the user. It will try to request permission if not granted yet and will throw a PERMISSION_DENIED error code if permission still not granted.
+
+`latlong 0.6.1`
+
+LatLong provides a lightweight library for common latitude and longitude calculation. 
+This library supports both, the "Haversine" and the "Vincenty" algorithm.
+"Haversine" is a bit faster but "Vincenty" is far more accurate!
+
+
+
+
