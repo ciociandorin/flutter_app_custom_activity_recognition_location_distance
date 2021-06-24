@@ -17,8 +17,6 @@ double distanceON_BUS = 0.0;
 bool ON_TRAIN = false;
 bool ON_BUS = false;
 
-
-
 void getLocation(action, time) async {
 
   print('locatia trecuta: ' + pastLongitude.toString() + " " + pastLatitude.toString());
@@ -37,7 +35,6 @@ void getLocation(action, time) async {
       new LatLng(_locationData.latitude,_locationData.longitude),
       new LatLng(pastLatitude,pastLongitude)
   );
-
 
   print("Distanta: " + meter.toString());
   if(pastLongitude == 0.0 && pastLatitude == 0.0)
@@ -68,7 +65,6 @@ void getLocation(action, time) async {
         distanceON_BUS += meter;
     }
   }
-
 
   pastLongitude = _locationData.longitude;
   pastLatitude = _locationData.latitude;
